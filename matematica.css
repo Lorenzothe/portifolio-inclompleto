@@ -219,5 +219,7 @@ h1 {
     margin-bottom: 5px;
 }
 .centralizar {
-    align-items: center;
+    text-align: justify;
+    display: flex;
+    color: #d89a27;
 }
