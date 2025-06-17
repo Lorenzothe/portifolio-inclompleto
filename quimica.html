@@ -1,81 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio de Química</title>
-    <link rel="stylesheet" href="quimica.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
     <header>
-      <section class="menus">
-        <div class="menu__externo">
-          <ul>
-            <li><a href="matematica.html">Matemática</a></li>
-            <li><a href="biologia.html">Biologia</a></li>
-            <li><a href="fisica.html">Física</a></li>
-          </ul>
+        <div class="menu">
+            <button class="botaodis" onclick="toggleMenu()">Química</button>
+            <nav class="lista" id="menuLista" style="display: none;">
+                <a href="português.html">Português</a>
+                <a href="matematica.html">Matemática</a>
+                <a href="index.html">Química</a>
+            </nav>
         </div>
-        <div class="menu__interno">
-          <ul>
-            <li><a href="#laboratorios">Laboratório</a></li>
-            <li><a href="#atividades">Atividades</a></li>
-            <li><a href="#provas">Provas</a></li>
-          </ul>
-        </div>
-      </section>
+        <nav>
+            <ul>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#provas">Provas</a></li>
+                <li><a href="#trabalhos">Trabalhos</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <h1>Quimica</h1>
-        <section class="quimica-container">
-            <div id="provas" class="conteudo">
-                <h2>Provas</h2>
-                <ul>
-                  <li>Provas realizadas ao longo do trimestre:</li>
-                  <li>Prova 1: Conteúdo 01 - Nota: 8,8.<span class="block"> <br>Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                      mollit anim id est laborum.</span>
-                  </li>
-                  <li>Prova 2: Conteúdo 02- Nota: 9,2.</li>
-                  <li>Prova 3: Conteúdo 03 - Nota: 7,3.</li>
-                </ul>
-            </div>
-            <div id="laboratorios" class="conteudo">
-                <h2>Laboratório</h2>
-                <p>Atividade de experimentos e pesquisas realizados em laboratório.</p>
-                <ul>
-                    <li>Relatório: Tema 01. <span class="opacidade"> <br>Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</span></li>
-                    <li>Relatório: Tema 02.</li>
-                    <li>Relatório: Tema 03.</li>
-                </ul>
-            </div>
-            <div id="atividades" class="conteudo">
-                <h2>Atividades</h2>
-                <p>Atividades práticas e teóricas de Biologia.</p>
-                <ul>
-                    <p>Atividade: Conteúdo 01.</p>
-                    <p>Atividade: Conteúdo 02.</p>
-                    <p>Atividade: Conteúdo 03.</p>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer></footer>
-  </body>
+    <section id="atividades">
+        <h2>Atividades</h2>
+        <p>Aqui você encontra as suas atividades da matéria de química.</p>
+        <div class="caixa1">
+            <h3>Caderno</h3>
+            <p>28/04 - <span class="estado">Valor:</span> 2,0 pontos - <span class="estado">Estado:</span> <span
+                    class="progresso">Em Progresso</span></p>
+            <a><span class="estado">Nota: </span><span class="Nota2">?? / 2,0</span></a>
+        </div>
+    </section>
+
+    <section id="provas">
+        <h2>Provas</h2>
+        <p>Consulte a data de suas provas antigas e subsequentes.</p>
+        <div class="caixa1">
+            <p>10/03 - <span class="estado">Valor:</span> 2,0 pontos - <span class="estado">Estado:</span> <span
+                    class="concluida">Concluida</span></p>
+            <a><span class="estado">Nota: </span><span class="Nota">1,8 / 2,0</span></a>
+        </div>
+        <div class="caixa1">
+            <p>28/04 - <span class="estado">Valor:</span> 3,0 pontos - <span class="estado">Estado:</span> <span
+                    class="progresso">Em Progresso</span></p>
+            <a><span class="estado">Nota: </span><span class="Nota2">?? / 3,0</span></a>
+        </div>
+    </section>
+
+    <section id="trabalhos">
+        <h2>Trabalhos</h2>
+        <p>Encontre aqui os trabalhos enviados pelos seus professores.</p>
+        <div class="caixa1">
+            <p>Nenhum Trabalho atribuído no momento</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
 </html>
