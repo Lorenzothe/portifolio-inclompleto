@@ -211,7 +211,7 @@ h1 {
     padding: 0;
 }
 
-.conteudo ul li:hover .opacidade {
+.conteudo ul li:active .opacidade {
     opacity: 1;
     max-height: 320px;
     text-align: justify;
